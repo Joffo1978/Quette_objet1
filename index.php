@@ -108,3 +108,5 @@ public function getEnergyLevel():int
 
 $Ford = new Car('blue',4,'gaz');
 var_dump($Ford);
+echo($Ford->forward());
+echo($Ford->brake());
