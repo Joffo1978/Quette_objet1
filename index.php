@@ -1,4 +1,56 @@
 <?php
+
+class Bycicle
+
+{
+
+        private int $nbWheels=4;
+
+        private int $currentSpeed =80;
+
+        private string $color;
+
+        private int $nbSeats;
+
+        private bool $hasLuggageRack;
+        
+public function forward(): string
+
+{
+
+    $this->currentSpeed = 15;
+
+
+    return "Go !";
+
+}
+
+
+public function brake(): string
+
+{
+
+   $sentence = "";
+
+   while ($this->currentSpeed > 0) {
+
+       $this->currentSpeed--;
+
+       $sentence .= "Brake !!!";
+
+   }
+
+   $sentence .= "I'm stopped !";
+
+   return $sentence;
+
+}
+
+
+
+}
+
+
 class Car
 
 {
